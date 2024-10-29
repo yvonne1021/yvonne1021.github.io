@@ -1,83 +1,104 @@
+/* 基本設置 */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom right, #fdf3e7, #f7e1c1);
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
-    background-color: #6b4f4f;
-    color: #fff;
-    padding: 20px;
+.menu-container {
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-header h1 {
-    font-size: 2.5em;
+.menu-container:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    font-size: 36px;
     margin-bottom: 10px;
+    color: #b87333;
+    text-shadow: 2px 2px #f4d3b2;
+    font-weight: bold;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
-.menu {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.menu h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.menu-category {
-    margin-bottom: 30px;
-}
-
-.menu-category h3 {
-    font-size: 1.5em;
-    border-bottom: 2px solid #ccc;
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f4d3b2;
     padding-bottom: 5px;
-    margin-bottom: 15px;
+    display: inline-block;
+    position: relative;
 }
 
-ul {
-    list-style-type: none;
+h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: #b87333;
 }
 
-ul li {
-    font-size: 1.2em;
+.menu-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #f4d3b2;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-ul li span {
+.menu-item:hover {
+    background-color: #fdf3e7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-name {
+    font-size: 18px;
     font-weight: bold;
-    color: #6b4f4f;
+    color: #444;
 }
 
-footer {
-    background-color: #6b4f4f;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
+.item-price {
+    font-size: 18px;
+    color: #b87333;
+    font-weight: bold;
 }
 
+.item-description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
 
-ul li {
-    background-color: #e0e0e0;
-    margin: 5px 0;
-    padding: 10px;
+/* 小動畫效果 */
+.menu-item:hover .item-name {
+    color: #b87333;
+    text-decoration: underline;
+}
+
+.menu-item:hover .item-price {
+    transform: scale(1.1);
 }
