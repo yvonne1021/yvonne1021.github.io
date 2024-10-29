@@ -4,79 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>咖啡廳菜單</title>
-    <style>
-        /* 通用樣式 */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #fdf3e7;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .menu-container {
-            width: 80%;
-            max-width: 700px;
-            background-color: #fff;
-            padding: 40px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            color: #b87333;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #333;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #f4d3b2;
-            padding-bottom: 5px;
-            display: inline-block;
-        }
-
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
-            padding: 10px 0;
-            border-bottom: 1px solid #e2d7d2;
-        }
-
-        .menu-item:last-child {
-            border-bottom: none;
-        }
-
-        .item-name {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .item-price {
-            font-size: 18px;
-            color: #b87333;
-        }
-
-        /* 小提示 */
-        .item-description {
-            font-size: 14px;
-            color: #555;
-            margin-top: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="menu-container">
@@ -97,6 +25,50 @@
             </div>
             <p class="item-price">$130</p>
         </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">美式咖啡</p>
+                <p class="item-description">黑咖啡，濃郁香醇</p>
+            </div>
+            <p class="item-price">$100</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">摩卡咖啡</p>
+                <p class="item-description">巧克力與咖啡的完美組合</p>
+            </div>
+            <p class="item-price">$140</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">冰滴咖啡</p>
+                <p class="item-description">慢速冷萃，清新順口</p>
+            </div>
+            <p class="item-price">$130</p>
+        </div>
+
+        <h2>茶飲品</h2>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">英式早餐茶</p>
+                <p class="item-description">濃郁紅茶，適合早餐享用</p>
+            </div>
+            <p class="item-price">$80</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">綠茶拿鐵</p>
+                <p class="item-description">清新的綠茶，搭配奶泡</p>
+            </div>
+            <p class="item-price">$110</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">玫瑰花茶</p>
+                <p class="item-description">清香迷人的花茶</p>
+            </div>
+            <p class="item-price">$90</p>
+        </div>
 
         <h2>甜點</h2>
         <div class="menu-item">
@@ -113,7 +85,27 @@
             </div>
             <p class="item-price">$160</p>
         </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">檸檬塔</p>
+                <p class="item-description">酸甜可口的檸檬餡，酥脆餅底</p>
+            </div>
+            <p class="item-price">$140</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">藍莓鬆餅</p>
+                <p class="item-description">新鮮藍莓搭配鬆軟的鬆餅</p>
+            </div>
+            <p class="item-price">$130</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">奶油泡芙</p>
+                <p class="item-description">香滑奶油，外脆內嫩的美味</p>
+            </div>
+            <p class="item-price">$120</p>
+        </div>
     </div>
 </body>
 </html>
-   
