@@ -1,320 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    
-   
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
-<title>Coffee Shop Menu</title>
-    
-    <
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡廳菜單</title>
+    <style>
+        /* 通用樣式 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
 
- 
-<link rel="stylesheet" href="styles.css">
+        body {
+            background-color: #fdf3e7;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-</
+        .menu-container {
+            width: 80%;
+            max-width: 700px;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #b87333;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #f4d3b2;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #e2d7d2;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .item-price {
+            font-size: 18px;
+            color: #b87333;
+        }
+
+        /* 小提示 */
+        .item-description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
-    
-    <
-
- 
-<div class="menu-container">
-        
-        
-
-     
-
- 
-<h1>Welcome to Cozy Coffee</h1>
-        <p class="tagline">Your perfect place for a cozy cup</p>
-
-        <div class="menu-section">
-            <h2>Coffee</h2>
-            <div class="menu-item">
-                
-                <
-
-      
-<img src="https://example.com/espresso.jpg" alt="Espresso">
-                
-                
-
-         
-
-  
-<div class="item-info">
-                    
-                   
-
-             
-
-       
-<h3>Espresso</h3>
-                    
-                   
-
-                
-
-            
-
-        
-
-    
-<p class="price">$3.00</p>
-                    
-                    
-
-                
-
-            
-
-        
-
-   
-<p class="description">Rich and bold espresso shot.</p>
-                
-                <
-
-       
-
-   
-</div>
-            
-            </d
-
-            
-
-        
-
-    
-</div>
-            
-           
-
-        
-
-    
-
-  
-<div class="menu-item">
-                
-                
-
-     
-
-  
-<img src="https://example.com/cappuccino.jpg" alt="Cappuccino">
-                
-                
-
-             
-
-          
-
-       
-
-   
-<div class="item-info">
-                    
-                 
-
-            
-
-         
-
-      
-
-  
-<h3>Cappuccino</h3>
-                    
-                    
-
-                 
-
-              
-
-          
-
-      
-
-  
-<p class="price">$4.50</p>
-                    
-                    <
-
-  
-<p class="description">Smooth espresso with steamed milk and foam.</p>
-                
-     
-
-   
-</div>
-            
-            <
-
-          
-
-       
-
-    
-</div>
-        
-        </div
-</div>
-
-        
-
-        
-
-
-     
-
-
- 
-<div class="menu-section">
-            <h2>Pastries</h2>
-            
-            <
-<div class="menu-item">
-                
-               
-
-           
-
-       
-
-  
-<img src="https://example.com/croissant.jpg" alt="Croissant">
-                
-                
-
-          
-
-       
-
-    
-
- 
-<div class="item-info">
-                    
-        
-
-    
-<h3>Croissant</h3>
-                    
-                   
-
-           
-
-       
-
-   
-<p class="price">$2.50</p>
-                    
-                
-
-            
-
-        
-
-   
-<p class="description">Flaky and buttery French pastry.</p>
-                
-                </
-
-   
-</div>
-            
-            </di
-
-            
-
-       
-
- 
-</div>
-            
-           
-
-     
-
- 
-<div class="menu-item">
-                
-                
-
-       
-
-    
-
- 
-<img src="https://example.com/muffin.jpg" alt="Muffin">
-                
-             
-
-       
-<div class="item-info">
-                    
-              
-
-           
-
-       
-
-   
-<h3>Blueberry Muffin</h3>
-                    
-                   
-
-                
-
-            
-
-        
-<p class="price">$3.00</p>
-                    
-                   
-
-                
-
-         
-
-      
-
-   
-<p class="description">Freshly baked muffin bursting with blueberries.</p>
-                
-                </d
-
-               
-
-           
-
-      
-
- 
-</div>
-            
-            <
-
-          
-
-      
-</div>
-        
-        </d
-
-        
-
-     
-
-  
-</div>
+    <div class="menu-container">
+        <h1>咖啡廳菜單</h1>
+
+        <h2>咖啡飲品</h2>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">拿鐵咖啡</p>
+                <p class="item-description">濃縮咖啡搭配順滑牛奶</p>
+            </div>
+            <p class="item-price">$120</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">卡布奇諾</p>
+                <p class="item-description">濃縮咖啡與細膩奶泡的完美結合</p>
+            </div>
+            <p class="item-price">$130</p>
+        </div>
+
+        <h2>甜點</h2>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">巧克力蛋糕</p>
+                <p class="item-description">濃郁巧克力口感，搭配新鮮莓果</p>
+            </div>
+            <p class="item-price">$150</p>
+        </div>
+        <div class="menu-item">
+            <div>
+                <p class="item-name">提拉米蘇</p>
+                <p class="item-description">經典義式甜點，咖啡與奶油的濃郁結合</p>
+            </div>
+            <p class="item-price">$160</p>
+        </div>
     </div>
-
-</body
 </body>
 </html>
+
