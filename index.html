@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>咖啡廳菜單</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <h1>咖啡廳菜單</h1>
     <div class="container">
-        <h1>咖啡廳菜單</h1>
-        <div class="menu-item" data-details="一杯濃郁的咖啡，搭配新鮮的牛奶。">
+        <div class="menu-item" data-name="美式咖啡" data-price="80" data-description="濃郁的美式咖啡，讓你一天充滿活力。">
+            <h2>美式咖啡</h2>
+            <p>價格: NT$80</p>
+        </div>
+        <div class="menu-item" data-name="拿鐵" data-price="100" data-description="香濃的拿鐵，搭配綿密的牛奶泡沫。">
             <h2>拿鐵</h2>
-            <p>價格: $4.00</p>
+            <p>價格: NT$100</p>
         </div>
-        <div class="menu-item" data-details="香濃的巧克力，讓你每一口都感到幸福。">
-            <h2>熱巧克力</h2>
-            <p>價格: $3.50</p>
+        <div class="menu-item" data-name="卡布奇諾" data-price="90" data-description="經典的卡布奇諾，適合任何時刻享用。">
+            <h2>卡布奇諾</h2>
+            <p>價格: NT$90</p>
         </div>
-        <div class="menu-item" data-details="清新的檸檬汁，讓你瞬間清涼。">
-            <h2>檸檬水</h2>
-            <p>價格: $2.00</p>
+        <div class="menu-item" data-name="冰咖啡" data-price="110" data-description="清涼的冰咖啡，完美消暑選擇。">
+            <h2>冰咖啡</h2>
+            <p>價格: NT$110</p>
         </div>
-        <div class="menu-item" data-details="香脆可口的鬆餅，搭配新鮮的水果。">
-            <h2>鬆餅</h2>
-            <p>價格: $5.00</p>
+        <div class="menu-item" data-name="摩卡" data-price="120" data-description="巧克力風味的摩卡，甜蜜滋味。">
+            <h2>摩卡</h2>
+            <p>價格: NT$120</p>
         </div>
-        <div class="menu-item" data-details="奶香四溢的冰淇淋，讓人心情愉快。">
-            <h2>冰淇淋</h2>
-            <p>價格: $3.00</p>
-        </div>
-        <div class="menu-item" data-details="綜合果汁，讓你充滿活力。">
-            <h2>果汁</h2>
-            <p>價格: $2.50</p>
-        </div>
-        <div class="menu-item" data-details="美味的可頌，搭配香濃的咖啡。">
-            <h2>可頌</h2>
-            <p>價格: $2.75</p>
-        </div>
-        <div class="menu-item" data-details="特製的法式吐司，淋上楓糖漿。">
-            <h2>法式吐司</h2>
-            <p>價格: $4.50</p>
+        <div class="menu-item" data-name="抹茶拿鐵" data-price="130" data-description="香滑的抹茶搭配奶泡，讓你感受不同風味。">
+            <h2>抹茶拿鐵</h2>
+            <p>價格: NT$130</p>
         </div>
         <div class="details">
-            <h3>詳細信息</h3>
-            <p id="item-details">點擊菜單項以查看詳情</p>
+            <h3>飲品詳情:</h3>
+            <div id="item-details">請點擊上面的菜單項目以查看詳情</div>
         </div>
+        <button id="clear-details">清除詳情</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
