@@ -10,6 +10,7 @@ body {
 h1 {
     font-size: 2.5em;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -31,7 +32,7 @@ h1 {
 }
 
 .menu-item:hover {
-    background-color: #e0f7fa; /* 淺藍色的懸停效果 */
+    background-color: #e0f7fa; /* 懸停效果 */
     transform: scale(1.02);
 }
 
@@ -39,18 +40,27 @@ h1 {
     margin-top: 20px;
 }
 
+#item-details {
+    background-color: #f0f0f0; /* 詳細信息的背景 */
+    border: 1px solid #4791d0;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+}
+
 button {
     color: white;
     background-color: #4791d0;
     border-radius: 5px;
     border: 1px solid #4791d0;
-    padding: 5px 10px 8px 10px;
+    padding: 5px 10px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #0F5897;
     border: 1px solid #0F5897;
 }
-
-
