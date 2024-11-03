@@ -1,3 +1,4 @@
+/* 基本樣式 */
 body {
     background-color: #e0f7fa;
     font-family: Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* 頁首樣式 */
 header {
     background-color: #00796b;
     color: #ffffff;
@@ -12,10 +14,13 @@ header {
     text-align: center;
 }
 
+/* 標題樣式 */
 h1, h2 {
     color: #00796b;
+    text-align: center;
 }
 
+/* 菜單區域樣式 */
 .menu-category {
     margin: 20px;
     padding: 10px;
@@ -31,10 +36,12 @@ h1, h2 {
     position: relative;
 }
 
+/* 菜單項目懸停效果 */
 .menu-item:hover {
     background-color: #b2dfdb;
 }
 
+/* 菜單描述的提示框樣式 */
 .tooltip {
     display: none;
     position: absolute;
@@ -47,6 +54,7 @@ h1, h2 {
     white-space: nowrap;
 }
 
+/* 表單樣式 */
 #reservationForm {
     display: flex;
     flex-direction: column;
@@ -63,17 +71,19 @@ h1, h2 {
     padding: 8px;
 }
 
-footer {
-    background-color: #00796b;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-}
-
-.box {
+/* 訂位紀錄樣式 */
+#reservations {
     display: none;
     margin: 20px;
     padding: 10px;
     background-color: #f1f1f1;
     border-radius: 8px;
+}
+
+/* 頁尾樣式 */
+footer {
+    background-color: #00796b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
 }
