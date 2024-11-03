@@ -30,6 +30,10 @@ h2 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.menu-category h3 {
+    color: #333;
+}
+
 .menu-item {
     cursor: pointer;
     margin: 5px 0;
