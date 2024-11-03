@@ -1,11 +1,14 @@
 // 等待頁面載入完成
 $(document).ready(function() {
-    // 菜單項目顯示描述
+    // 顯示菜單項目的描述
     $('.menu-item').hover(function() {
         const description = $(this).data('description');
         $(this).append(`<span class="tooltip">${description}</span>`);
+        $(this).find('.tooltip').fadeIn(200);
     }, function() {
-        $(this).find('.tooltip').remove();
+        $(this).find('.tooltip').fadeOut(200, function() {
+            $(this).remove();
+        });
     });
 
     // 訂位表單提交事件
@@ -29,9 +32,8 @@ $(document).ready(function() {
         }
     });
 
-    // 點擊標題以滑動顯示訂位紀錄
+    // 點擊訂位紀錄標題以顯示或隱藏紀錄
     $('h2:contains("訂位紀錄")').on('click', function() {
         $('#reservations').slideToggle();
     });
 });
-
