@@ -3,86 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>咖啡廳菜單</title>
 </head>
 <body>
     <header>
-        <h1>Coffee Haven</h1>
-        <p>享受每一口，感受每一瞬。</p>
+        <h1>悠然咖啡廳</h1>
     </header>
+    
+    <div class="menu-category">
+        <h2>鹹食</h2>
+        <div class="menu-item" data-description="一份美味的漢堡。">漢堡</div>
+        <div class="menu-item" data-description="經典的熱狗，外脆內軟。">熱狗</div>
+        <div class="menu-item" data-description="意大利面，搭配特製醬汁。">意大利面</div>
+        <div class="menu-item" data-description="新鮮的沙拉，健康又美味。">沙拉</div>
+        <div class="menu-item" data-description="香煎雞胸肉，搭配季節蔬菜。">雞胸肉</div>
+        <div class="menu-item" data-description="豬肉排，配上獨特醬汁。">豬肉排</div>
+        <div class="menu-item" data-description="新鮮出爐的比薩。">比薩</div>
+        <div class="menu-item" data-description="美味的咖哩飯。">咖哩飯</div>
+        <div class="menu-item" data-description="口感豐富的墨西哥卷。">墨西哥卷</div>
+        <div class="menu-item" data-description="獨特風味的炸魚片。">炸魚片</div>
+    </div>
 
-    <main>
-        <section id="menu">
-            <h2>菜單</h2>
-            <div class="menu-category">
-                <h3>鹹食</h3>
-                <ul>
-                    <li class="menu-item" data-description="經典的義大利麵，搭配新鮮的蔬菜和香醇醬汁。">義大利麵 - NT$150</li>
-                    <li class="menu-item" data-description="酥脆的可頌，內餡為香濃的火腿和起司。">火腿起司可頌 - NT$80</li>
-                    <li class="menu-item" data-description="特製漢堡，搭配新鮮的生菜和番茄。">特製漢堡 - NT$200</li>
-                    <li class="menu-item" data-description="香嫩的烤雞翅，附上特製醬汁。">烤雞翅 - NT$120</li>
-                    <li class="menu-item" data-description="新鮮的沙拉，搭配多種蔬菜和油醋醬。">健康沙拉 - NT$100</li>
-                    <li class="menu-item" data-description="濃郁的玉米濃湯，讓你暖和起來。">玉米濃湯 - NT$90</li>
-                    <li class="menu-item" data-description="香煎鯖魚，搭配檸檬汁和香草。">香煎鯖魚 - NT$220</li>
-                    <li class="menu-item" data-description="經典的日式拉麵，湯頭濃郁，配料豐富。">日式拉麵 - NT$180</li>
-                    <li class="menu-item" data-description="香脆的春捲，搭配酸辣醬。">春捲 - NT$70</li>
-                    <li class="menu-item" data-description="手工餃子，內餡豐富。">手工餃子 - NT$110</li>
-                </ul>
-            </div>
-            <div class="menu-category">
-                <h3>飲料</h3>
-                <ul>
-                    <li class="menu-item" data-description="濃郁的美式咖啡，適合提神。">美式咖啡 - NT$80</li>
-                    <li class="menu-item" data-description="香滑的拿鐵，搭配綿密的奶泡。">拿鐵 - NT$100</li>
-                    <li class="menu-item" data-description="清涼的冰咖啡，完美消暑。">冰咖啡 - NT$110</li>
-                    <li class="menu-item" data-description="經典的卡布奇諾，適合任何時刻。">卡布奇諾 - NT$90</li>
-                    <li class="menu-item" data-description="巧克力風味的摩卡，甜蜜滋味。">摩卡 - NT$120</li>
-                    <li class="menu-item" data-description="清新的檸檬水，消暑必備。">檸檬水 - NT$50</li>
-                    <li class="menu-item" data-description="健康的綠茶，茶香四溢。">綠茶 - NT$60</li>
-                    <li class="menu-item" data-description="特製的水果茶，清新可口。">水果茶 - NT$70</li>
-                </ul>
-            </div>
-            <div class="menu-category">
-                <h3>甜點</h3>
-                <ul>
-                    <li class="menu-item" data-description="軟綿綿的巧克力蛋糕，讓人陶醉。">巧克力蛋糕 - NT$90</li>
-                    <li class="menu-item" data-description="清新的水果塔，健康又美味。">水果塔 - NT$80</li>
-                    <li class="menu-item" data-description="濃郁的奶酪，入口即化。">奶酪 - NT$70</li>
-                    <li class="menu-item" data-description="香脆的餅乾，搭配咖啡最佳。">餅乾 - NT$50</li>
-                    <li class="menu-item" data-description="香甜的泡芙，內餡豐富。">泡芙 - NT$60</li>
-                </ul>
-            </div>
-        </section>
+    <div class="menu-category">
+        <h2>飲料</h2>
+        <div class="menu-item" data-description="經典的拿鐵咖啡。">拿鐵</div>
+        <div class="menu-item" data-description="香濃的卡布奇諾。">卡布奇諾</div>
+        <div class="menu-item" data-description="新鮮的果汁。">果汁</div>
+        <div class="menu-item" data-description="清新的冰茶。">冰茶</div>
+        <div class="menu-item" data-description="健康的奶昔。">奶昔</div>
+        <div class="menu-item" data-description="特製的調酒。">調酒</div>
+        <div class="menu-item" data-description="香甜的巧克力飲料。">巧克力</div>
+        <div class="menu-item" data-description="清爽的氣泡水。">氣泡水</div>
+    </div>
 
-        <section id="reservation">
-            <h2>訂位系統</h2>
-            <form id="reservation-form">
-                <label for="name">姓名:</label>
-                <input type="text" id="name" required>
-                <label for="phone">電話:</label>
-                <input type="tel" id="phone" required>
-                <label for="email">信箱:</label>
-                <input type="email" id="email" required>
-                <label for="people">訂位人數:</label>
-                <input type="number" id="people" min="1" required>
-                <label for="time">訂位時間:</label>
-                <input type="datetime-local" id="time" required>
-                <button type="submit">提交訂位</button>
-            </form>
-            <div id="reservation-message"></div>
-        </section>
+    <div class="menu-category">
+        <h2>甜點</h2>
+        <div class="menu-item" data-description="美味的巧克力蛋糕。">巧克力蛋糕</div>
+        <div class="menu-item" data-description="新鮮的水果塔。">水果塔</div>
+        <div class="menu-item" data-description="經典的奶油泡芙。">奶油泡芙</div>
+        <div class="menu-item" data-description="提拉米蘇，咖啡味十足。">提拉米蘇</div>
+        <div class="menu-item" data-description="香濃的冰淇淋。">冰淇淋</div>
+    </div>
 
-        <section id="hours">
-            <h2>營業時間</h2>
-            <p>平日: 早上10:00 - 晚上21:00</p>
-            <p>假日: 早上10:30 - 晚上18:30</p>
-        </section>
-    </main>
+    <h2>訂位系統</h2>
+    <form id="reservationForm">
+        <input type="text" id="name" placeholder="姓名" required>
+        <input type="tel" id="phone" placeholder="電話" required>
+        <input type="email" id="email" placeholder="信箱" required>
+        <input type="number" id="guestCount" placeholder="訂位人數" required>
+        <input type="datetime-local" id="reservationTime" required>
+        <button type="submit">提交訂位</button>
+    </form>
+
+    <h2>訂位紀錄</h2>
+    <div id="reservations" class="box"></div>
 
     <footer>
-        <p>&copy; 2024 Coffee Haven. 版權所有.</p>
+        <p>營業時間：平日 10:00 - 21:00；假日 10:30 - 18:30</p>
     </footer>
 
     <script src="script.js"></script>
