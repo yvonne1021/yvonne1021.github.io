@@ -1,6 +1,5 @@
-/* 設置背景色和基本樣式 */
 body {
-    background-color: #e0f7fa; /* 淺藍色背景 */
+    background-color: #e0f7fa;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -29,10 +28,23 @@ h1, h2 {
     padding: 10px;
     cursor: pointer;
     color: #00796b;
+    position: relative;
 }
 
 .menu-item:hover {
     background-color: #b2dfdb;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
 }
 
 #reservationForm {
