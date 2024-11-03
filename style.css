@@ -1,81 +1,67 @@
+/* 設置背景色和基本樣式 */
 body {
-    text-align: center;
-    font-family: "Helvetica", sans-serif;
-    background-color: #AEEEEE; /* 淺藍色背景 */
-    color: #333;
+    background-color: #e0f7fa; /* 淺藍色背景 */
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 header {
-    margin-bottom: 20px;
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-h2 {
-    margin-top: 30px;
-    color: #4791d0;
+h1, h2 {
+    color: #00796b;
 }
 
 .menu-category {
-    margin: 20px 0;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.menu-category h3 {
-    color: #333;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item {
+    padding: 10px;
     cursor: pointer;
-    margin: 5px 0;
-    transition: background-color 0.3s, transform 0.3s;
+    color: #00796b;
 }
 
 .menu-item:hover {
-    background-color: #e0f7fa; /* 懸停效果 */
-    transform: scale(1.02);
+    background-color: #b2dfdb;
 }
 
-form {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+#reservationForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input {
-    display: block;
-    margin: 10px auto;
+#reservationForm input,
+#reservationForm button {
+    margin: 5px 0;
     padding: 8px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    color: white;
-    background-color: #4791d0;
-    border-radius: 5px;
-    border: 1px solid #4791d0;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #0F5897;
 }
 
 footer {
-    margin-top: 40px;
+    background-color: #00796b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    display: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
 }
