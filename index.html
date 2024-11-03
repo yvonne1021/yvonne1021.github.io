@@ -9,10 +9,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <!-- 頁首 -->
     <header>
         <h1>悠然咖啡廳</h1>
     </header>
     
+    <!-- 菜單分類區域 -->
     <div class="menu-category">
         <h2>鹹食</h2>
         <div class="menu-item" data-description="一份美味的漢堡。">漢堡</div>
@@ -21,6 +23,23 @@
         <div class="menu-item" data-description="新鮮的沙拉，健康又美味。">沙拉</div>
     </div>
 
+    <div class="menu-category">
+        <h2>飲料</h2>
+        <div class="menu-item" data-description="經典的拿鐵咖啡。">拿鐵</div>
+        <div class="menu-item" data-description="香濃的卡布奇諾。">卡布奇諾</div>
+        <div class="menu-item" data-description="新鮮的果汁。">果汁</div>
+        <div class="menu-item" data-description="清新的冰茶。">冰茶</div>
+    </div>
+
+    <div class="menu-category">
+        <h2>甜點</h2>
+        <div class="menu-item" data-description="美味的巧克力蛋糕。">巧克力蛋糕</div>
+        <div class="menu-item" data-description="新鮮的水果塔。">水果塔</div>
+        <div class="menu-item" data-description="經典的奶油泡芙。">奶油泡芙</div>
+        <div class="menu-item" data-description="提拉米蘇，咖啡味十足。">提拉米蘇</div>
+    </div>
+
+    <!-- 訂位表單 -->
     <h2>訂位系統</h2>
     <form id="reservationForm">
         <input type="text" id="name" placeholder="姓名" required>
@@ -31,9 +50,11 @@
         <button type="submit">提交訂位</button>
     </form>
 
+    <!-- 訂位紀錄 -->
     <h2>訂位紀錄</h2>
     <div id="reservations" class="box"></div>
 
+    <!-- 頁尾 -->
     <footer>
         <p>營業時間：平日 10:00 - 21:00；假日 10:30 - 18:30</p>
     </footer>
