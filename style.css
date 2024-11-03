@@ -1,89 +1,53 @@
-/* 基本樣式 */
 body {
-    background-color: #e0f7fa;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
 }
 
-/* 頁首樣式 */
 header {
-    background-color: #00796b;
-    color: #ffffff;
+    background-color: #6b4f4f;
+    color: white;
     padding: 20px;
-    text-align: center;
 }
 
-/* 標題樣式 */
-h1, h2 {
-    color: #00796b;
-    text-align: center;
+.menu {
+    margin: 20px auto;
+    max-width: 800px;
 }
 
-/* 菜單區域樣式 */
-.menu-category {
-    margin: 20px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.menu-category h3 {
+    color: #6b4f4f;
 }
 
 .menu-item {
+    margin: 10px;
     padding: 10px;
+    border: 1px solid #ddd;
     cursor: pointer;
-    color: #00796b;
-    position: relative;
 }
 
-/* 菜單項目懸停效果 */
-.menu-item:hover {
-    background-color: #b2dfdb;
+.reservation {
+    margin: 20px auto;
+    max-width: 600px;
 }
 
-/* 菜單描述的提示框樣式 */
-.tooltip {
+.detail-view {
     display: none;
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    top: 100%;
-    left: 0;
-    white-space: nowrap;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #6b4f4f;
 }
 
-/* 表單樣式 */
-#reservationForm {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#reservationForm input,
-#reservationForm button {
-    margin: 5px 0;
-    padding: 8px;
-}
-
-/* 訂位紀錄樣式 */
-#reservations {
-    display: none;
-    margin: 20px;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-}
-
-/* 頁尾樣式 */
 footer {
-    background-color: #00796b;
-    color: #ffffff;
-    text-align: center;
+    background-color: #6b4f4f;
+    color: white;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
