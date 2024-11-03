@@ -1,8 +1,16 @@
 $(document).ready(function() {
-    // 顯示菜單項目詳情
-    $(".menu-item").click(function() {
-        const description = $(this).data("
-
+    // Display details on menu item click
+    $('.menu-item').click(function() {
+        const title = $(this).text();
+        const description = $(this).data('description');
+        const price = $(this).data('price');
+        
+        $('#detailTitle').text(title);
+        $('#detailDescription').text(description);
+        $('#detailPrice').text(price);
+        
+        $('#detailView').show();
+    });
 
     // Reservation form submission
     $('#reservationForm').submit(function(event) {
@@ -11,3 +19,4 @@ $(document).ready(function() {
         this.reset();
     });
 });
+
