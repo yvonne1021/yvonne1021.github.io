@@ -1,111 +1,36 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>咖啡廳菜單</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="menu-container">
+    <div class="container">
         <h1>咖啡廳菜單</h1>
-
-        <h2>咖啡飲品</h2>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">拿鐵咖啡</p>
-                <p class="item-description">濃縮咖啡搭配順滑牛奶</p>
-            </div>
-            <p class="item-price">$120</p>
+        <div class="menu-item" data-details="一杯濃郁的咖啡，搭配新鮮的牛奶。">
+            <h2>拿鐵</h2>
+            <p>價格: $4.00</p>
         </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">卡布奇諾</p>
-                <p class="item-description">濃縮咖啡與細膩奶泡的完美結合</p>
-            </div>
-            <p class="item-price">$130</p>
+        <div class="menu-item" data-details="香濃的巧克力，讓你每一口都感到幸福。">
+            <h2>熱巧克力</h2>
+            <p>價格: $3.50</p>
         </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">美式咖啡</p>
-                <p class="item-description">黑咖啡，濃郁香醇</p>
-            </div>
-            <p class="item-price">$100</p>
+        <div class="menu-item" data-details="清新的檸檬汁，讓你瞬間清涼。">
+            <h2>檸檬水</h2>
+            <p>價格: $2.00</p>
         </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">摩卡咖啡</p>
-                <p class="item-description">巧克力與咖啡的完美組合</p>
-            </div>
-            <p class="item-price">$140</p>
+        <div class="menu-item" data-details="香脆可口的鬆餅，搭配新鮮的水果。">
+            <h2>鬆餅</h2>
+            <p>價格: $5.00</p>
         </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">冰滴咖啡</p>
-                <p class="item-description">慢速冷萃，清新順口</p>
-            </div>
-            <p class="item-price">$130</p>
-        </div>
-
-        <h2>茶飲品</h2>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">英式早餐茶</p>
-                <p class="item-description">濃郁紅茶，適合早餐享用</p>
-            </div>
-            <p class="item-price">$80</p>
-        </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">綠茶拿鐵</p>
-                <p class="item-description">清新的綠茶，搭配奶泡</p>
-            </div>
-            <p class="item-price">$110</p>
-        </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">玫瑰花茶</p>
-                <p class="item-description">清香迷人的花茶</p>
-            </div>
-            <p class="item-price">$90</p>
-        </div>
-
-        <h2>甜點</h2>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">巧克力蛋糕</p>
-                <p class="item-description">濃郁巧克力口感，搭配新鮮莓果</p>
-            </div>
-            <p class="item-price">$150</p>
-        </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">提拉米蘇</p>
-                <p class="item-description">經典義式甜點，咖啡與奶油的濃郁結合</p>
-            </div>
-            <p class="item-price">$160</p>
-        </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">檸檬塔</p>
-                <p class="item-description">酸甜可口的檸檬餡，酥脆餅底</p>
-            </div>
-            <p class="item-price">$140</p>
-        </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">藍莓鬆餅</p>
-                <p class="item-description">新鮮藍莓搭配鬆軟的鬆餅</p>
-            </div>
-            <p class="item-price">$130</p>
-        </div>
-        <div class="menu-item">
-            <div>
-                <p class="item-name">奶油泡芙</p>
-                <p class="item-description">香滑奶油，外脆內嫩的美味</p>
-            </div>
-            <p class="item-price">$120</p>
+        <div class="details">
+            <h3>詳細信息</h3>
+            <p id="item-details">點擊菜單項以查看詳情</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
