@@ -7,28 +7,33 @@ body {
     padding: 20px;
 }
 
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
+header {
     margin-bottom: 20px;
 }
 
-.container {
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #4791d0;
+}
+
+.menu-category {
+    margin: 20px 0;
     background-color: #fff;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item {
-    border: 1px solid #4791d0;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    transition: background-color 0.3s, transform 0.3s;
     cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .menu-item:hover {
@@ -36,18 +41,21 @@ h1 {
     transform: scale(1.02);
 }
 
-.details {
-    margin-top: 20px;
+form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-#item-details {
-    background-color: #f0f0f0; /* 詳細信息的背景 */
-    border: 1px solid #4791d0;
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
-    display: inline-block;
-    width: 90%;
-    margin: 0 auto;
 }
 
 button {
@@ -57,10 +65,13 @@ button {
     border: 1px solid #4791d0;
     padding: 5px 10px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #0F5897;
-    border: 1px solid #0F5897;
+}
+
+footer {
+    margin-top: 40px;
 }
